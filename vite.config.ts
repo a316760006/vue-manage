@@ -20,7 +20,7 @@ const viteConfig = defineConfig((mode: ConfigEnv) => {
       cors: true, // 允许跨域
       proxy: {
         '/api': {
-          target: "http://xxxxxxx:8080",
+          target: "http://82.157.245.11:3001",
           changeOrigin: true,
           rewrite: (path) => path.replace('/api', '')
         }
